@@ -6,4 +6,4 @@ Use infrared light sensors and a RaspberryPi to calculate train speed on a model
 - 1x RaspberryPi (any type with GPIO)
 
 ## Operation
-Sensors are placed 24 inches apart on either side of the track. With the script running a train passes between the sensors and the speed is calculated and displayed.
+Sensors are placed 24 inches apart on either side of the track. The code assumes GPI 17 and 18 are used. With the script running a train passes between the sensors and the speed is calculated and displayed.
