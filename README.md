@@ -1,6 +1,8 @@
 # TrainScaleSpeed
 Use infrared light sensors and a RaspberryPi to calculate train speed on a model railway.
 
+![](sensors.png)
+
 ## Parts Used
 - 2x [IR break beam sensors](https://thepihut.com/products/ir-break-beam-sensor-3mm-leds)
 - 1x RaspberryPi (any type with GPIO)
