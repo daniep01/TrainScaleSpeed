@@ -83,8 +83,8 @@ def calculate_speed(time_elapsed):
 	print(str(scale_mph) + ' mph at OO scale speed')
 	
 
-GPIO.add_event_detect(17, GPIO.RISING, bouncetime=100)
-GPIO.add_event_detect(18, GPIO.RISING, bouncetime=100)
+GPIO.add_event_detect(17, GPIO.BOTH, bouncetime=40)
+GPIO.add_event_detect(18, GPIO.BOTH, bouncetime=40)
 
 GPIO.add_event_callback(17, my_callback_one)
 GPIO.add_event_callback(18, my_callback_two)
