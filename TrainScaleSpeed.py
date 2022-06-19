@@ -44,8 +44,10 @@ def my_callback_one(channel):
 			if t1 - time_of_last_measurement > 10:
 				# avoid false restarts
 				running_state = running_right
-				print('Running Right')
+				print('Running A to B')
 				print('Start Timer A at ' + str(t1))
+			else:
+				print('Ignoring false restart A')
 	
 	
 def my_callback_two(channel):
@@ -69,8 +71,10 @@ def my_callback_two(channel):
 			if t1 - time_of_last_measurement > 10:
 				# avoid false restarts
 				running_state = running_left
-				print('Running Left')
+				print('Running B to A')
 				print('Start Timer B at ' + str(t1))
+			else:
+				print('Ignoring false restart B')
 	
 		
 def calculate_speed(time_elapsed):
